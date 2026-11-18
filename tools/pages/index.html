@@ -1,0 +1,108 @@
+<section class="wrap hero">
+  <div class="hero__text load">
+    <p class="eyebrow">Sýrárna · Most</p>
+    <h1 class="display">Dobrota, která <em>zraje.</em></h1>
+    <p class="lead">Šestnáct sýrů z osmi zemí Evropy. Otoč si bochníkem, ťukni na zlaté body a zjisti, co se v sýru skrývá.</p>
+    <div class="btn-row">
+      <a class="btn btn--gold" href="/syry/">Objevit naše sýry</a>
+      <a class="btn btn--line" href="/kviz/">Jaký sýr jsi ty?</a>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stage__view" id="stage">
+      <img class="stage__fallback" src="/assets/img/logo-mark.svg" alt="" width="520" height="466">
+      <canvas id="cheese" tabindex="0" role="img" aria-label="Otočný 3D bochník sýra. Šipkami vlevo a vpravo ho otočíš, mezerníkem vysuneš dílek."></canvas>
+      <button class="spot" type="button" aria-pressed="true" aria-label="Proč má sýr díry?">1</button>
+      <button class="spot" type="button" aria-pressed="false" aria-label="Kolik mléka je v sýru?">2</button>
+      <button class="spot" type="button" aria-pressed="false" aria-label="Proč sýr zraje?">3</button>
+    </div>
+    <div class="fact" id="fact" aria-live="polite">
+      <p class="fact__q">Proč má sýr díry?</p>
+      <p class="fact__a">Při zrání vzniká v těstě oxid uhličitý. Bublinky nemají kudy ven, a tak v sýru zůstanou jako oka.</p>
+    </div>
+    <div class="stage__tools">
+      <button class="btn btn--line btn--sm" id="cut" type="button" aria-pressed="false">Ukrojit dílek</button>
+      <span class="hint">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D0AE56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+        Táhni a bochník se otáčí
+      </span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>La Dobrota</span><span>·</span><span>Sýrárna</span><span>·</span><span>Most</span><span>·</span><span>Dobrota, která zraje</span><span>·</span><span>16 sýrů z 8 zemí</span><span>·</span>
+    <span>La Dobrota</span><span>·</span><span>Sýrárna</span><span>·</span><span>Most</span><span>·</span><span>Dobrota, která zraje</span><span>·</span><span>16 sýrů z 8 zemí</span><span>·</span>
+    <span>La Dobrota</span><span>·</span><span>Sýrárna</span><span>·</span><span>Most</span><span>·</span><span>Dobrota, která zraje</span><span>·</span><span>16 sýrů z 8 zemí</span><span>·</span>
+    <span>La Dobrota</span><span>·</span><span>Sýrárna</span><span>·</span><span>Most</span><span>·</span><span>Dobrota, která zraje</span><span>·</span><span>16 sýrů z 8 zemí</span><span>·</span>
+  </div>
+</div>
+
+<section class="wrap section">
+  <div class="section__head reveal">
+    <div>
+      <p class="eyebrow">Naše sýry</p>
+      <h2 class="h2">Vyber si svou <em>chuť</em></h2>
+    </div>
+    <div class="chips" role="group" aria-label="Druh mléka">
+      <button class="chip" type="button" data-milk="kravske" aria-pressed="true">Kravské</button>
+      <button class="chip" type="button" data-milk="ovci" aria-pressed="false">Ovčí</button>
+      <button class="chip" type="button" data-milk="kozi" aria-pressed="false">Kozí</button>
+    </div>
+  </div>
+  <div class="panel taste reveal" id="taste" aria-live="polite">
+    <img class="taste__img" src="/assets/img/syry/10-karamelovy-syr-brunost.svg" alt="Karamelový sýr Brunost" width="400" height="300">
+    <div class="taste__body">
+      <p class="eyebrow">z kravského mléka · Norsko</p>
+      <h3 class="taste__name">Karamelový sýr Brunost</h3>
+      <p class="taste__text lead">Sýr, který chutná jako karamel (a přesto je to sýr). Chuť je sladká, lehce slaná.</p>
+      <div class="taste__tags"><span class="tag">Norsko</span><span class="tag">98 Kč</span></div>
+      <div class="btn-row">
+        <button class="btn btn--line btn--sm taste__prev" type="button" aria-label="Předchozí sýr">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+        </button>
+        <button class="btn btn--line btn--sm taste__next" type="button">Další sýr
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <a class="link-arrow taste__link" href="/syry/#karamelovy-syr-brunost">Detail sýra
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="stats reveal">
+    <div class="stat"><div class="stat__n" data-count="16">16</div><div class="stat__l">sýrů v nabídce</div></div>
+    <div class="stat"><div class="stat__n" data-count="8">8</div><div class="stat__l">zemí Evropy</div></div>
+    <div class="stat"><div class="stat__n" data-count="3">3</div><div class="stat__l">druhy mléka</div></div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="split">
+    <div class="split__text reveal">
+      <p class="eyebrow">Mapa sýrů</p>
+      <h2 class="h2">Sýry z celé <em>Evropy</em></h2>
+      <p class="lead">Gouda z Holandska, Manchego ze Španělska, karamelový Brunost z Norska. Klikni na zemi a podívej se, co z ní máme.</p>
+      <a class="btn btn--gold" href="/mapa/">Prozkoumat mapu</a>
+    </div>
+    <a class="split__map reveal" href="/mapa/" aria-label="Otevřít mapu sýrů">
+      <img src="/assets/img/mapa/europa.svg" alt="Mapa Evropy se zvýrazněnými zeměmi, odkud jsou naše sýry" width="800" height="780" loading="lazy">
+    </a>
+  </div>
+</section>
+
+<section class="wrap section--tight">
+  <div class="cta reveal">
+    <div class="cta__text">
+      <p class="eyebrow">Sýrový kvíz · 2 hry</p>
+      <h2 class="cta__title">Jaký sýr jsi ty?</h2>
+      <p>Šest otázek a víš, jestli jsi pohodová Gouda, nebo karamelový Brunost. Výsledek ukaž u našeho stánku.</p>
+    </div>
+    <a class="btn btn--dark" href="/kviz/">Spustit kvíz</a>
+  </div>
+</section>
