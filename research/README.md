@@ -10,6 +10,9 @@
 - [`sites/krasolesi.md`](sites/krasolesi.md) — отчёт по krasolesi.cz
 - [`sites/coca-cola.md`](sites/coca-cola.md) — отчёт по coca-cola.com/cz/cs (ориентир по подаче)
 - [`brand/README.md`](brand/README.md) — логотип, цвета, шрифты, контакты и адрес из QR-кода
+- `maket/` — картинки всех экранов макета
+- `ilustrace/` — 16 иллюстраций сыров и скрипт, который их рисует
+- `mapa/` — карта Европы для интерактивной страницы
 - `sites/img/` — скриншоты сайтов-примеров
 - `brand/*.svg` — логотип в четырёх вариантах
 
