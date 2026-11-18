@@ -182,7 +182,7 @@ function personResult() {
         </div>
       </div>
       <div class="result__side">
-        <div class="result__disc"><img src="${esc(cheeseImg(c))}" alt="${esc(c.name)}" width="240" height="180"></div>
+        <div class="result__disc${c.photo ? ' result__disc--photo' : ''}"><img src="${esc(cheeseImg(c))}" alt="${esc(c.name)}" width="240" height="180"></div>
         <span>Ukaž výsledek u našeho stánku</span>
       </div>
     </div>

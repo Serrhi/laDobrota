@@ -1,5 +1,5 @@
 // La Dobrota — katalog sýrů: filtr podle mléka a země, otáčecí karty.
-import { CHEESES, MILK, COUNTRIES, cheeseImg, countryNames, allergenText, cheeseCount, esc } from './data.js';
+import { CHEESES, MILK, COUNTRIES, cheesePic, countryNames, allergenText, cheeseCount, esc } from './data.js';
 
 const grid = document.getElementById('cards');
 const chipBox = document.getElementById('filters');
@@ -20,7 +20,7 @@ function card(c, i) {
       <span class="card__inner">
         <span class="card__face card__front">
           <span class="card__top"><span class="card__milk">${MILK[c.milk].label}</span><span class="card__num">${n}</span></span>
-          <img class="card__img" src="${esc(cheeseImg(c))}" alt="" width="240" height="180" loading="lazy">
+          ${cheesePic(c, 'card__img')}
           <span class="card__name">${esc(c.name)}</span>
           <span class="card__origin">${esc(countryNames(c))}</span>
           <span class="card__more">Zjistit víc ${ICON}</span>

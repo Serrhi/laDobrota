@@ -35,12 +35,12 @@ python3 tools/build.py
 
 ## Как выложить
 
-Сайт на Cloudflare Pages берётся из корня ветки `main`. Чтобы изменения появились по адресу из QR-кода, их нужно слить в `main`.
+Готовый сайт лежит в корне ветки `main`. Проект в Cloudflare Pages, судя по всему, не подключён к GitHub, поэтому сам он не обновляется: файлы сайта нужно загрузить в Cloudflare вручную (Workers & Pages → проект → Create deployment → загрузить папку или ZIP с сайтом). Папки `research/` и `tools/` загружать не нужно.
 
 ## Что откуда
 
 - Логотип, цвета и контакты — с визитки (`research/brand/`).
 - Шрифты Cormorant Garamond и Manrope лежат в `assets/fonts/`, лицензия SIL Open Font License.
-- Рисунки сыров — собственные иллюстрации (`research/ilustrace/generate.py`).
+- Фотографии 14 сыров взяты из магазина www.syrydomu.cz (`assets/img/syry/foto/`), на странице каталога стоит подпись об этом. Fancy Gouda и Ementál там не нашлись, у них остались собственные рисунки (`research/ilustrace/generate.py`).
 - Контуры карты — Natural Earth, общественное достояние (`research/mapa/build_map.js`).
 - `research/` — отчёты по сайтам-примерам, каталог и макет. На самом сайте эта папка не показывается (`_redirects`).

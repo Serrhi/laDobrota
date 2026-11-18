@@ -58,8 +58,9 @@ if (taste) {
   const render = (animate) => {
     const all = list();
     const c = all[state.i];
-    el('.taste__img').src = cheeseImg(c);
-    el('.taste__img').alt = c.name;
+    el('.taste__img img').src = cheeseImg(c);
+    el('.taste__img img').alt = c.name;
+    el('.taste__img').classList.toggle('pic--photo', Boolean(c.photo));
     el('.eyebrow').textContent = `${MILK[c.milk].from} · ${countryNames(c)}`;
     el('.taste__name').textContent = c.name;
     el('.taste__text').textContent = c.text;
