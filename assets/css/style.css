@@ -111,9 +111,9 @@ button { font: inherit; color: inherit; }
 .site-header.is-stuck { border-bottom-color: var(--line-soft); }
 .site-header__in { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 12px; min-height: 48px; color: var(--gold); }
-.brand img { height: 42px; width: auto; transition: transform 0.5s var(--ease); }
-.brand:hover img { transform: rotate(-8deg) scale(1.06); }
-.brand span { font-family: var(--serif); font-size: 24px; letter-spacing: 0.08em; white-space: nowrap; }
+.brand__mark { height: 46px; width: auto; transition: transform 0.5s var(--ease); }
+.brand:hover .brand__mark { transform: rotate(-8deg) scale(1.06); }
+.brand__name { height: 36px; width: auto; }
 .nav { display: flex; align-items: center; gap: 34px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; }
 .nav a:not(.btn) { position: relative; color: var(--ivory); padding: 12px 0; }
 .nav a:not(.btn)::after { content: ''; position: absolute; left: 0; right: 0; bottom: 6px; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.3s var(--ease); }
@@ -127,6 +127,8 @@ button { font: inherit; color: inherit; }
 
 @media (max-width: 860px) {
   .site-header__in { min-height: 68px; }
+  .brand__mark { height: 40px; }
+  .brand__name { height: 31px; }
   .menu-btn { display: flex; flex-direction: column; }
   .nav {
     position: fixed; top: 68px; left: 0; right: 0; height: calc(100vh - 68px); height: calc(100dvh - 68px); z-index: 49; flex-direction: column; align-items: stretch; gap: 0;

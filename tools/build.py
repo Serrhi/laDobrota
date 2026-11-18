@@ -54,7 +54,7 @@ HEAD = """<!doctype html>
 <a class="skip" href="#obsah">Přeskočit na obsah</a>
 <header class="site-header">
   <div class="wrap site-header__in">
-    <a class="brand" href="/" aria-label="La Dobrota – domů"><img src="/assets/img/logo-mark.svg" alt="" width="47" height="42"><span>LA DOBROTA</span></a>
+    <a class="brand" href="/" aria-label="La Dobrota – domů"><img class="brand__mark" src="/assets/img/logo-mark.svg" alt="" width="47" height="42"><img class="brand__name" src="/assets/img/logo-name-syrarna.svg" alt="La Dobrota – sýrárna" width="142" height="36"></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otevřít menu"><span></span><span></span></button>
     <nav class="nav" id="menu" aria-label="Hlavní menu">
       <a href="/">Domů</a>
