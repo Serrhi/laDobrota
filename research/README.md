@@ -5,6 +5,7 @@
 ## Содержание
 
 - [`summary.md`](summary.md) — сводка: какие приёмы берём, какие будут страницы и интерактив, чего ещё не хватает
+- [`katalog.md`](katalog.md) — каталог: 16 сыров с ценами, странами, аллергенами и описаниями; в конце — что проверить
 - [`sites/cheesehouse.md`](sites/cheesehouse.md) — отчёт по cheesehouse.cz
 - [`sites/krasolesi.md`](sites/krasolesi.md) — отчёт по krasolesi.cz
 - [`sites/coca-cola.md`](sites/coca-cola.md) — отчёт по coca-cola.com/cz/cs (ориентир по подаче)
