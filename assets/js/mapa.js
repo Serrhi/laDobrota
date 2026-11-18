@@ -1,5 +1,5 @@
 // La Dobrota — interaktivní mapa Evropy: klik na zemi ukáže sýry, které z ní jsou.
-import { COUNTRIES, COUNTRY_ORDER, MILK, cheesesFrom, cheeseImg, cheeseCount, esc } from './data.js';
+import { COUNTRIES, COUNTRY_ORDER, MILK, cheesesFrom, cheesePic, cheeseCount, esc } from './data.js';
 import { replay } from './site.js';
 
 const map = document.getElementById('map');
@@ -21,7 +21,7 @@ function select(key, animate = true) {
   info.querySelector('.eyebrow').textContent = cheeseCount(list.length);
   info.querySelector('.mapinfo__name').textContent = COUNTRIES[key].name;
   info.querySelector('.mapinfo__list').innerHTML = list.map((c, i) => `<li data-i="${i}"><a class="row" href="/syry/#${c.id}">
-    <img src="${esc(cheeseImg(c))}" alt="" width="84" height="63">
+    ${cheesePic(c, 'row__pic')}
     <span><span class="row__name">${esc(c.short || c.name)}</span><span class="row__milk">${MILK[c.milk].adj} sýr · ${c.price} Kč</span></span></a></li>`).join('');
   info.querySelectorAll('li').forEach((li) => li.style.setProperty('--i', li.dataset.i));
   info.querySelector('.link-arrow').href = `/syry/?zeme=${key}`;
