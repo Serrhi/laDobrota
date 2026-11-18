@@ -17,7 +17,7 @@
 | 7 | Camembert | Francie | 45 Kč | 37,19 Kč | 7 | Francouzský sýr s bílou plísňovou kůrkou a jemným, krémovým středem. |
 | 8 | Kaškaval — tradiční balkánský sýr | Holandsko | 189 Kč | 168,75 Kč | 7 | Polotvrdý sýr pocházející z Balkánu. Je ideální jak pro studenou kuchyni, tak i pro tepelnou úpravu. |
 | 9 | Ementál | Francie | 55 Kč | 49,11 Kč | 7 | Francouzský sýr s typickými oky, pružnou strukturou a příjemně jemnou chutí s lehce nasládlým a oříškovým nádechem. |
-| 10 | Karamelový sýr (Gjetost) | Norsko | 98 Kč | 87,50 Kč | 7 | Sýr, který chutná jako karamel (a přesto je to sýr). Chuť je sladká, lehce slaná. |
+| 10 | Karamelový sýr (на листе: gjetost; на сайте: Brunost) | Norsko | 98 Kč | 87,50 Kč | 7 | Sýr, který chutná jako karamel (a přesto je to sýr). Chuť je sladká, lehce slaná. |
 
 ## Ovčí
 
@@ -37,13 +37,16 @@
 
 На листе с овечьими сырами зачёркнут «España Curado» — в каталог не вошёл.
 
-## Что стоит проверить
+## Что решено для сайта
 
-1. **Camembert, цена без DPH.** Записано 37,19 Kč — это 45 Kč, посчитанные со ставкой 21 %. Остальные сыры посчитаны со ставкой 12 %; по ней выходит 40,18 Kč.
-2. **Kozí gouda, цена без DPH.** Записано 65,29 Kč — тоже ставка 21 %. По ставке 12 % выходит 70,54 Kč (как у Ovčí farmářský sýr с той же ценой 79 Kč).
-3. **Manchego DOP и Kozí sýr s lanýžem — аллерген 8 (орехи).** В самих сырах орехов обычно нет: у Manchego «oříšková» только вкус, трюфель — гриб. Если орехов в составе нет, оставить только 7.
-4. **Fancy Gouda** — нет страны и описания.
-5. **Kozí sýr s lanýžem** — нет страны.
-6. **Irský cheddar** — фраза в описании на листе не дописана («ideální na vaření –»); страна указана VB.
-7. **Karamelový sýr** — в скобках на листе написано неразборчиво, взято название Gjetost (норвежский карамельный сыр, он же Brunost).
-8. **«/ kus»** написано только у первого сыра. Цены у остальных тоже за штуку? Какой вес у штуки?
+Владелец проекта поручил решить открытые вопросы самостоятельно (18. 11. 2026). На сайте сделано так:
+
+1. **Аллергены** оставлены как на листах, в том числе 8 у Manchego DOP и Kozí sýr s lanýžem.
+2. **Цены** показаны только с DPH, как справочные каталожные цены. Цены без DPH на сайте нет. В таблицах выше у Camembert и Kozí gouda оставлены значения с листов (37,19 и 65,29 Kč, посчитаны со ставкой 21 %); по ставке 12 %, как у остальных сыров, выходит 40,18 и 70,54 Kč.
+3. **Fancy Gouda** — страна: Holandsko; описание написано заново: «Gouda pro ty, kdo chtějí něco navíc. Plnější a výraznější chuť než u klasické goudy.»
+4. **Kozí sýr s lanýžem** — страна: Holandsko (как у остальных козьих сыров в каталоге).
+5. **Irský cheddar** — фраза дописана: «Přesně ten typ sýra, který je ideální na vaření.»
+6. **Karamelový sýr** — на сайте называется «Karamelový sýr Brunost». Gjetost дословно значит «козий сыр», а в каталоге он стоит среди коровьих; Brunost — общее название норвежского карамельного сыра, подходит в любом случае.
+7. К части сыров добавлена строка «Víš, že…» с проверенным фактом (происхождение названия, как образуются дырки и т. п.).
+
+Если что-то из этого неверно, правится в одном файле: `assets/js/data.js`.
